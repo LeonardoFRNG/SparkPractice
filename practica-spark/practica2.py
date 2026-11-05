@@ -5,7 +5,7 @@ from pyspark.sql.functions import col, sum as _sum, round as _round, avg as _avg
 
 spark = SparkSession.builder \
     .appName("PracticaSpark2") \
-    .master("local[*]") \
+    .master("local[2]") \
     .config("spark.driver.extraJavaOptions", "--add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED") \
     .config("spark.executor.extraJavaOptions", "--add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED") \
     .getOrCreate()

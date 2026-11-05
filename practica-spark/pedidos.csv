@@ -1,0 +1,10 @@
+id_pedido,cliente,ciudad,precio_unitario,cantidad,metodo_pago
+101,Carlos Perez,Bogota,50.0,2,Tarjeta
+102,Ana Gomez,Medellin,15.5,4,Efectivo
+103,Juan Ruiz,Cali,,1,Tarjeta
+104,Maria Lopez,Bogota,120.0,1,Transferencia
+105,Pedro Diaz,Barranquilla,30.0,,Tarjeta
+106,Laura Rios,Medellin,200.0,3,Tarjeta
+107,Sofia Mejia,Bogota,80.0,2,Efectivo
+108,Andres Castro,Barranquilla,45.0,3,Transferencia
+109,David Silva,Cali,10.0,5,Efectivo

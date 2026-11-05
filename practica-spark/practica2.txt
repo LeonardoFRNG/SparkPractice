@@ -1,0 +1,44 @@
+2. Reto: ¿Qué debes lograr?
+Escribe un script en PySpark (ejercicio.py) que realice los siguientes 5 pasos:
+
+Cargar los datos y limpiar nulos:
+
+Lee pedidos.csv con cabeceras e inferencia de tipos.
+
+Elimina cualquier fila que tenga valores nulos en precio_unitario o cantidad (pista: usa .dropna(subset=[...])).
+
+Crear columna calculada monto_total:
+
+Multiplica precio_unitario por cantidad, redondeado a 2 decimales.
+
+Segmentar el tipo de compra (tipo_compra):
+
+Agrega una columna condicional tipo_compra:
+
+Si monto_total >= 150, márcala como "Premium".
+
+En caso contrario, márcala como "Estandar".
+
+(Pista: importa y usa from pyspark.sql.functions import when).
+
+Resumen analítico por ciudad:
+
+Agrupa por ciudad.
+
+Calcula:
+
+total_recaudado: suma de monto_total.
+
+promedio_por_pedido: promedio de monto_total redondeado a 2 decimales (avg de pyspark.sql.functions).
+
+total_pedidos: conteo de pedidos (count).
+
+Filtro: Muestra únicamente aquellas ciudades donde el total_recaudado sea mayor a 100.0.
+
+Orden: De mayor a menor según total_recaudado.
+
+Mostrar resultados y cerrar la sesión:
+
+Muestra la tabla resultante en consola.
+
+Cierra spark.stop().
